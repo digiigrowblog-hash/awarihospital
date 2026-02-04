@@ -85,14 +85,14 @@ const Header: React.FC = () => {
               initial={{ opacity: 0, y: -20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
-              className="absolute top-24 left-0 right-0  mx-6 rounded-4xl p-10 flex flex-col space-y-8 shadow-2xl border bg-white "
+              className="absolute top-24 left-0 right-0  mx-4 rounded-4xl p-10 flex flex-col space-y-4 shadow-2xl border bg-white "
             >
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   href={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`text-2xl font-bold ${
+                  className={`text-lg font-bold ${
                     pathname === link.path ? 'text-teal-600' : 'text-slate-900'
                   }`}
                 >
