@@ -43,7 +43,7 @@ const Services: React.FC = () => {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 border ${
+                className={`md:px-6 px-2 py-1 md:py-2 rounded-full font-semibold transition-all duration-300 border ${
                   activeFilter === filter
                     ? 'bg-teal-600 text-white border-teal-600 shadow-lg'
                     : 'bg-white text-slate-700 border-slate-200 hover:bg-teal-50'

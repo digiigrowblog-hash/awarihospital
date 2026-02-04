@@ -203,7 +203,7 @@ const Contact: React.FC = () => {
       {/* Map Interactive Area */}
       <section className="container mx-auto px-6 mb-24">
         <div className="w-full bg-slate-200 rounded-[2rem]  md:rounded-[4rem] overflow-hidden relative border border-slate-100">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.9984890793257!2d78.94610617523068!3d20.063665881354982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd31f0015721ba9%3A0xb504f451b914ea7f!2sAwari%20hospital!5e1!3m2!1sen!2sin!4v1770023778879!5m2!1sen!2sin" 
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.998395192468!2d78.94610617390404!3d20.063670920227718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd31f0015721ba9%3A0xb504f451b914ea7f!2sAwari%20hospital!5e1!3m2!1sen!2sin!4v1770208193882!5m2!1sen!2sin" 
            width="100%" 
            height="450" 
            style={{border:0}} 

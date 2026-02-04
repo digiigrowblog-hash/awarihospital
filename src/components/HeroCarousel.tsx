@@ -104,7 +104,7 @@ const HeroCarousel: React.FC = () => {
             </div>
 
             <div className="mt-16 flex items-center gap-12 border-t border-white/10 pt-10 opacity-60">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 md:block hidden">
                 <ShieldCheck className="w-5 h-5 text-[#2dd4bf]" />
                 <span className="text-sm font-medium">JCI Accredited</span>
               </div>
@@ -127,7 +127,7 @@ const HeroCarousel: React.FC = () => {
             <button
               key={i}
               onClick={() => setIndex(i)}
-              className={`h-1 rounded-full transition-all duration-500 ${i === index ? 'w-12 bg-[#2dd4bf]' : 'w-4 bg-white/20'}`}
+              className={`h-1 rounded-full  transition-all duration-500 ${i === index ? 'w-12 bg-[#2dd4bf]' : 'w-4 bg-white/20'}`}
             />
           ))}
         </div>

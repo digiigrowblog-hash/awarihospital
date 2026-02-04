@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Sparkles, MoveRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,17 +29,17 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[100] flex justify-center p-6 pointer-events-none">
+    <div className="fixed top-0 left-0 right-0 z-[100] flex justify-center md:p-6 p-3 pointer-events-none">
       <motion.header 
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className={`pointer-events-auto transition-all duration-500 glass-pill rounded-full flex items-center px-6 lg:px-8 h-20 ${
+        className={`pointer-events-auto transition-all duration-500 glass-pill rounded-full flex items-center px-4 lg:px-8 h-20 ${
           scrolled ? 'w-full lg:w-[85%] scale-95' : 'w-full lg:w-[95%]'
         }`}
       >
         <Link href="/" className="flex items-center space-x-2 shrink-0">
-          <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/20">
-            <Sparkles className="w-5 h-5 text-white" />
+          <div className="w-10 h-10  rounded-full flex items-center justify-center ">
+            <Image className='md:w-10 md:h-10 w-7 h-7' src="/images/icons.png" alt="Awari Hospital Logo" width={600} height={600} />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-950">
             Awari<span className="text-teal-600">hospital</span>

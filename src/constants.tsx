@@ -233,22 +233,22 @@ export const REVIEWS: Review[] = [
     id: '1',
     name: 'Rutuja Patil',
     rating: 5,
-    comment: 'The doctors and staff at Awarihospital were incredibly attentive. The care I received was top-class.',
+    comment: 'My experience at awari hospital was exceptional.The gentle care provided by staff made me feel truly valued.',
     avatarUrl: '/images/icon.png'
   },
   {
     id: '2',
-    name: 'pratik shinde',
+    name: 'Santosh Kalwelwar',
     rating: 4,
-    comment: 'Very professional environment and minimal waiting time. The laboratory facilities are top-notch.',
+    comment: 'Such a wonderful experience of our baby boy  birth. Doctor is very cooperative,they explain everything in detail.',
     avatarUrl: '/images/icon.png'
   },
   {
     id: '3',
-    name: 'Emily Davis',
+    name: 'nilu pawar',
     rating: 5,
     comment: "Best hospital in the city. Their emergency response saved my father's life. Truly grateful.",
-    avatarUrl: 'https://i.pravatar.cc/150?u=emily'
+    avatarUrl: '/images/icon.png'
   }
 ];
 

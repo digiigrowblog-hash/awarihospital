@@ -287,21 +287,13 @@ const Home: React.FC = () => {
       {/* Modern Testimonials */}
       <section className="py-32 bg-teal-50/50">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-20 items-center">
-            <div className="lg:w-1/3">
+          <div className=" items-center">
+            <div className="">
               <h2 className="text-6xl font-bold text-slate-950 tracking-tighter leading-none mb-8 text-glow">
-                Patient <br /> Stories.
+                Patient Stories.
               </h2>
-              <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-900 hover:text-white cursor-pointer transition-colors">
-                  <Plus className="w-5 h-5 rotate-45" />
-                </div>
-                <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-900 hover:text-white cursor-pointer transition-colors">
-                  <Plus className="w-5 h-5" />
-                </div>
-              </div>
             </div>
-            <div className="lg:w-2/3 flex gap-8 overflow-x-auto pb-12 snap-x hide-scrollbar">
+            <div className="grid grid-cols-3 grid-cols-1  gap-8 overflow-x-auto pb-12 snap-x hide-scrollbar">
               {REVIEWS.map((rev) => (
                 <div
                   key={rev.id}
