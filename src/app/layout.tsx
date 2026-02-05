@@ -17,8 +17,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Awarihospital - Next-Gen Medical Care',
-  description: 'Experience the future of healthcare where cutting-edge technology merges with human empathy in a boutique hospital environment.',
+  title: 'Awari Hospital – Leaders in Precision Medicine & Compassionate Care',
+  description: 'Discover Awari Hospital, a trusted leader in precision medicine since 2015, combining innovative technology, expert doctors, and compassionate care for every patient.',
 };
 
 export default function RootLayout({
