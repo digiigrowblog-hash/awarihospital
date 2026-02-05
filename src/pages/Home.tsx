@@ -86,7 +86,7 @@ const SERVICES = [
   {
     title: "Facilities",
     description: "Comfort-focused infrastructure and amenities.",
-    imageUrl: "/images/facilities.jpg",
+    imageUrl: "/images/Facilities.jpg",
     items: [
       "WiFi",
       "Common Bathroom",
