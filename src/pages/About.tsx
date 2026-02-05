@@ -65,7 +65,7 @@ const About: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-slate-950 mb-8 tracking-tight"> Decade of Healing.</h2>
             <div className="space-y-6 text-slate-500 text-lg font-light leading-relaxed">
               <p>
-                Our journey began in 2015 with a single mission: to create a sanctuary where medical innovation meets human empathy. Today, we are a global leader in precision medicine.
+                Our journey began in 2015 with a single mission: to create a sanctuary where medical innovation meets human empathy. Today, we are a Top leader in precision medicine.
               </p>
               <p>
                 Every wing of our hospital is designed to facilitate peace, every piece of technology is chosen for accuracy, and every staff member is trained to treat the individual, not just the diagnosis.

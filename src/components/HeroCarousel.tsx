@@ -127,7 +127,7 @@ const HeroCarousel: React.FC = () => {
             <button
               key={i}
               onClick={() => setIndex(i)}
-              className={`h-1 rounded-full  transition-all duration-500 ${i === index ? 'w-12 bg-[#2dd4bf]' : 'w-4 bg-white/20'}`}
+              className={`h-1 rounded-full         transition-all duration-500 ${i === index ? 'w-12 bg-[#2dd4bf]' : 'w-4 bg-white/20'}`}
             />
           ))}
         </div>

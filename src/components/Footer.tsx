@@ -32,27 +32,27 @@ const Footer: React.FC = () => {
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-teal-600 mb-8">Hospital</p>
               <ul className="space-y-4 text-slate-900 font-medium">
-                <li><Link href="/about" className="hover:text-teal-600 transition-colors">Our Heritage</Link></li>
-                <li><Link href="/services" className="hover:text-teal-600 transition-colors">Medical Units</Link></li>
-                <li><Link href="/gallery" className="hover:text-teal-600 transition-colors">Visual Tour</Link></li>
+                <li><Link href="/" className="hover:text-teal-600 transition-colors">Home</Link></li>
+                <li><Link href="/about" className="hover:text-teal-600 transition-colors">About Us</Link></li>
+                <li><Link href="/services" className="hover:text-teal-600 transition-colors">Services</Link></li>
               </ul>
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-teal-600 mb-8">Resources</p>
               <ul className="space-y-4 text-slate-900 font-medium">
-                <li><a href="#" className="hover:text-teal-600 transition-colors">Patient Portal</a></li>
-                <li><a href="#" className="hover:text-teal-600 transition-colors">Telemedicine</a></li>
-                <li><a href="#" className="hover:text-teal-600 transition-colors">Health Insights</a></li>
+                <li><a href="/contact" className="hover:text-teal-600 transition-colors">Contact US</a></li>
+                <li><a href="/facilities" className="hover:text-teal-600 transition-colors">Facilities</a></li>
+                <li><a href="/gallery" className="hover:text-teal-600 transition-colors">Gallery</a></li>
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
               <p className="text-xs font-bold uppercase tracking-widest text-teal-600 mb-8">Location</p>
               <p className="text-slate-900 font-medium mb-6">
-                123 Medical Drive, <br />
-                Sanctuary District, <br />
-                Capital City 44210
+                Nandepera road,   <br />
+                behind shivar hospital, <br />
+                Tilak nagar, Wani, Maharashtra 445304
               </p>
-              <a href="#" className="inline-flex items-center gap-2 text-teal-600 font-bold">
+              <a href="https://maps.app.goo.gl/bgjGkivdmwGYwXJJ6" className="inline-flex items-center gap-2 text-teal-600 font-bold">
                 Get Directions <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>

@@ -234,7 +234,7 @@ const Home: React.FC = () => {
       <section className="py-32 bg-slate-950 text-white rounded-[5rem] mx-4 mb-32 overflow-hidden relative">
         <div className="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
 
-        <div className="container mx-auto px-12 relative z-10">
+        <div className="container mx-auto md:px-12 px-7 relative z-10">
           <div className="max-w-3xl mb-20">
             <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-none">
               The <span className="text-teal-400">Verticals</span> of Care.
@@ -261,7 +261,7 @@ const Home: React.FC = () => {
                   />
                 </div>
 
-                <div className="absolute inset-0 bg-slate-950/60 p-10 flex flex-col justify-end">
+                <div className="absolute inset-0 bg-slate-950/60 md:p-10 p-4 flex flex-col justify-end">
                   <h3 className="text-4xl font-bold mb-3">{service.title}</h3>
                   <p className="text-slate-300 mb-4 max-w-md">
                     {service.description}
@@ -285,7 +285,7 @@ const Home: React.FC = () => {
 
 
       {/* Modern Testimonials */}
-      <section className="py-32 bg-teal-50/50">
+      {/* <section className="py-32 bg-teal-50/50">
         <div className="container mx-auto px-6">
           <div className=" items-center">
             <div className="">
@@ -327,25 +327,25 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Infinite Footer CTA */}
-      <section className="py-32 container mx-auto px-6">
-        <div className="bg-slate-950 rounded-[5rem] p-24 text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 blur-[150px]" />
+      <section className="py-24 container mx-auto px-6">
+        <div className="bg-slate-950 md:rounded-[5rem] rounded-3xl md:p-24 p-12 text-center relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 blur-[150px] pointer-events-none" />
           <h2 className="text-6xl md:text-8xl font-bold text-white tracking-tighter mb-12">
             Take the <span className="text-teal-400">Step.</span>
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-8">
             <Link
               href="/contact"
-              className="px-12 py-6 bg-teal-500 text-white rounded-full font-bold text-xl hover:bg-teal-400 transition-all"
+              className="md:px-12 px-8 md:py-6 py-3  bg-teal-500 text-white rounded-full font-bold text-xl hover:bg-teal-400 transition-all"
             >
               Schedule Consultation
             </Link>
             <a
-              href="tel:+123"
-              className="px-12 py-6 bg-white/5 border border-white/20 text-white rounded-full font-bold text-xl hover:bg-white hover:text-slate-950 transition-all"
+              href="tel:+917947417062"
+              className="md:px-12 px-8 md:py-6 py-3 bg-white/5 border border-white/20 text-white rounded-full font-bold text-xl hover:bg-white hover:text-slate-950 transition-all"
             >
               Direct Hotline
             </a>
