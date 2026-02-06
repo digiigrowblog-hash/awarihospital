@@ -103,7 +103,7 @@ const HeroCarousel: React.FC = () => {
               </Link>
             </div>
 
-            <div className="mt-16 flex items-center gap-12 border-t border-white/10 pt-10 opacity-60">
+            {/* <div className="mt-16 flex items-center gap-12 border-t border-white/10 pt-10 opacity-60">
               <div className="flex items-center gap-3 md:block hidden">
                 <ShieldCheck className="w-5 h-5 text-[#2dd4bf]" />
                 <span className="text-sm font-medium">JCI Accredited</span>
@@ -112,7 +112,7 @@ const HeroCarousel: React.FC = () => {
                 <Activity className="w-5 h-5 text-[#2dd4bf]" />
                 <span className="text-sm font-medium">24/7 Diagnostics</span>
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           <div className="hidden lg:flex justify-end relative">
