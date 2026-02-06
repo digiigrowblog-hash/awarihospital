@@ -204,8 +204,8 @@ const Home: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {["M7lc1UVf-VE", "ysz5S6PUM-U", "ScMzIvxBSi4"].map((vid) => (
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+          {["M7lc1UVf-VE", "ScMzIvxBSi4"].map((vid) => (
             <div
               key={vid}
               className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm"
