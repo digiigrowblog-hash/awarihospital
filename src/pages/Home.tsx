@@ -16,36 +16,35 @@ import {
   Star,
   Building2,
 } from "lucide-react";
-import {  DOCTORS, REVIEWS } from "@/constants";
+import { DOCTORS, REVIEWS } from "@/constants";
 import HeroCarousel from "@/components/HeroCarousel";
 
-  const reviews = [
-    {
-      name: "Sarah Patil",
-      role: "Patient",
-      rating: 5,
-      review:
-        "The care I received was exceptional. The staff was compassionate, and the facilities were truly world-class.",
-      img: "/images/review1.jpg",
-    },
-    {
-      name: "Rajesh kamle",
-      role: "Patient",
-      rating: 4,
-      review:
-        "From consultation to treatment, everything was seamless. Highly recommend this hospital for anyone seeking quality care.",
-      img: "/images/review2.jpg",
-    },
-    {
-      name: "priyesh shinde",
-      role: "Patient",
-      rating: 5,
-      review:
-        "Modern technology combined with a human touch made my experience incredibly comforting.",
-      img: "/images/review3.jpg",
-    },
-  ];
-
+const reviews = [
+  {
+    name: "Sarah Patil",
+    role: "Patient",
+    rating: 5,
+    review:
+      "The care I received was exceptional. The staff was compassionate, and the facilities were truly world-class.",
+    img: "/images/review1.jpg",
+  },
+  {
+    name: "Rajesh kamle",
+    role: "Patient",
+    rating: 4,
+    review:
+      "From consultation to treatment, everything was seamless. Highly recommend this hospital for anyone seeking quality care.",
+    img: "/images/review2.jpg",
+  },
+  {
+    name: "priyesh shinde",
+    role: "Patient",
+    rating: 5,
+    review:
+      "Modern technology combined with a human touch made my experience incredibly comforting.",
+    img: "/images/review3.jpg",
+  },
+];
 
 const SERVICES = [
   {
@@ -58,9 +57,8 @@ const SERVICES = [
       "Pediatric Care",
       "Fertility Counselling Services",
       "Preoperative Care",
-      "Open 24x7"
-    ]
-
+      "Open 24x7",
+    ],
   },
   {
     title: "Tests",
@@ -75,8 +73,8 @@ const SERVICES = [
       "Glucose Tolerance",
       "General Test",
       "Urine Testing",
-      "Semen Analysis"
-    ]
+      "Semen Analysis",
+    ],
   },
   {
     title: "Surgery",
@@ -89,8 +87,8 @@ const SERVICES = [
       "Laparoscopic Sterilisation",
       "Reconstructive Surgery",
       "Vaginal Hysterectomy",
-      "Tubal Ligation"
-    ]
+      "Tubal Ligation",
+    ],
   },
   {
     title: "Treatment",
@@ -105,8 +103,8 @@ const SERVICES = [
       "Neurological Dysfunction",
       "Fibroadenoma",
       "Irregular Menses",
-      "Urinary Incontinence"
-    ]
+      "Urinary Incontinence",
+    ],
   },
   {
     title: "Facilities",
@@ -123,8 +121,8 @@ const SERVICES = [
       "Women Wellness Center",
       "Wheelchair Accessible Entrance",
       "Private Rooms",
-      "Day Care Center"
-    ]
+      "Day Care Center",
+    ],
   },
   {
     title: "Management",
@@ -137,16 +135,9 @@ const SERVICES = [
       "Child Growth Management",
       "Urinary Tract Infection Management",
       "High Risk Obstetrics",
-    ]
-  }
+    ],
+  },
 ];
-
-
-
-
-
-
-
 
 const Home: React.FC = () => {
   const containerVars = {
@@ -245,9 +236,9 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-4">
-                <h4 className="font-bold text-lg mb-2">Patient Story</h4>
+                <h4 className="font-bold text-lg mb-2">Hospital Overview</h4>
                 <p className="text-sm text-slate-600">
-                  Short overview of the patient&apos;s experience and outcomes.
+                  Short overview of the patient&apos;s experience and Our hospitality.
                 </p>
               </div>
             </div>
@@ -303,111 +294,70 @@ const Home: React.FC = () => {
                 </div>
               </div>
             ))}
-            <Link href="/services" className="md:col-span-12 mt-8 mx-auto px-10 py-4 bg-teal-500 text-white rounded-full font-bold text-lg hover:bg-teal-400 transition-all flex items-center gap-3">Explore All Services</Link>
+            <Link
+              href="/services"
+              className="md:col-span-12 mt-8 mx-auto px-10 py-4 bg-teal-500 text-white rounded-full font-bold text-lg hover:bg-teal-400 transition-all flex items-center gap-3"
+            >
+              Explore All Services
+            </Link>
           </div>
         </div>
       </section>
 
-
-      {/* Modern Testimonials */}
-      {/* <section className="py-32 bg-teal-50/50">
-        <div className="container mx-auto px-6">
-          <div className=" items-center">
-            <div className="">
-              <h2 className="text-6xl font-bold text-slate-950 tracking-tighter leading-none mb-8 text-glow">
-                Patient Stories.
-              </h2>
-            </div>
-            <div className="grid grid-cols-3 grid-cols-1  gap-8 overflow-x-auto pb-12 snap-x hide-scrollbar">
-              {REVIEWS.map((rev) => (
-                <div
-                  key={rev.id}
-                  className="min-w-[400px] p-12 rounded-[3.5rem] bg-white shadow-xl shadow-teal-900/5 snap-center"
-                >
-                  <div className="flex gap-1 text-teal-500 mb-8">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-xl text-slate-700 font-light italic mb-10 leading-relaxed">
-                    &quot;{rev.comment}&quot;
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <Image
-                      src={rev.avatarUrl}
-                      alt={rev.name}
-                      width={48}
-                      height={48}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <p className="font-bold text-slate-900">{rev.name}</p>
-                      <p className="text-xs font-bold text-teal-600 uppercase tracking-widest">
-                        Post-Recovery
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-
-
-
-    {/* patient Review */}
-    <section className="relative py-24 px-6 bg-slate-50">
-      <div className="container mx-auto text-center mb-16">
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight"
-        >
-          Patient <span className="text-teal-500 italic font-light">Reviews</span>
-        </motion.h2>
-        <p className="text-slate-500 mt-4 max-w-2xl mx-auto text-lg">
-          Real stories from our patients reflect our commitment to compassionate, next-generation healthcare.
-        </p>
-      </div>
-
-      <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {reviews.map((review, index) => (
-          <motion.div
-            key={index}
+      {/* patient Review */}
+      <section className="relative py-24 px-6 bg-slate-50">
+        <div className="container mx-auto text-center mb-16">
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all"
+            className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight"
           >
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center gap-1">
-                {Array.from({ length: review.rating || 5 }).map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-lg">★</span>
-                ))}
-              </div>
-              <div>
-                <h4 className="font-bold text-slate-900 text-lg">
-                  {review.name}
-                </h4>
-                <p className="text-sm text-teal-500 font-semibold">
-                  {review.role}
-                </p>
-              </div>
-            </div>
+            Patient{" "}
+            <span className="text-teal-500 italic font-light">Reviews</span>
+          </motion.h2>
+          <p className="text-slate-500 mt-4 max-w-2xl mx-auto text-lg">
+            Real stories from our patients reflect our commitment to
+            compassionate, next-generation healthcare.
+          </p>
+        </div>
 
-            <p className="text-slate-600 leading-relaxed italic">
-              “{review.review}”
-            </p>
-          </motion.div>
-        ))}
-      </div>
-    </section>
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {reviews.map((review, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all"
+            >
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-1">
+                  {Array.from({ length: review.rating || 5 }).map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-lg">
+                      ★
+                    </span>
+                  ))}
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900 text-lg">
+                    {review.name}
+                  </h4>
+                  <p className="text-sm text-teal-500 font-semibold">
+                    {review.role}
+                  </p>
+                </div>
+              </div>
 
+              <p className="text-slate-600 leading-relaxed italic">
+                “{review.review}”
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
 
       {/* Infinite Footer CTA */}
       <section className="py-24 container mx-auto px-6">
@@ -437,67 +387,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-
-// <section className="relative min-h-screen flex items-center pt-24 pb-12 px-6">
-//   <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center">
-//     <motion.div
-//       initial={{ opacity: 0, x: -50 }}
-//       animate={{ opacity: 1, x: 0 }}
-//       transition={{ duration: 1 }}
-//     >
-//       <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-widest mb-8">
-//         <span className="relative flex h-2 w-2">
-//           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-//           <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
-//         </span>
-//         Next-Gen Medical Sanctuary
-//       </div>
-//       <h1 className="text-6xl md:text-8xl font-bold text-slate-950 mb-8 leading-[0.95] tracking-tighter">
-//         Healing <br />
-//         <span className="text-teal-500 font-light italic">Redefined.</span>
-//       </h1>
-//       <p className="text-xl text-slate-500 mb-12 max-w-lg leading-relaxed font-light">
-//         Experience the future of healthcare where cutting-edge technology merges with human empathy in a boutique hospital environment.
-//       </p>
-//       <div className="flex flex-col sm:flex-row gap-6">
-//         <Link
-//           href="/contact"
-//           className="px-10 py-5 bg-slate-950 text-white rounded-full font-bold flex items-center justify-center gap-3 hover:bg-teal-600 transition-all shadow-xl shadow-slate-900/10"
-//         >
-//           Secure Consultation
-//           <MoveRight className="w-5 h-5" />
-//         </Link>
-//         <Link
-//           href="/services"
-//           className="px-10 py-5 bg-white text-slate-900 rounded-full font-bold flex items-center justify-center gap-3 border border-slate-100 hover:bg-slate-50 transition-all"
-//         >
-//           Explore Specialties
-//         </Link>
-//       </div>
-//     </motion.div>
-
-//     <motion.div
-//       initial={{ opacity: 0, scale: 0.9 }}
-//       animate={{ opacity: 1, scale: 1 }}
-//       transition={{ duration: 1.2, ease: "circOut" }}
-//       className="relative"
-//     >
-//       <div className="aspect-[4/5] w-full max-w-[500px] ml-auto rounded-[4rem] overflow-hidden shadow-2xl relative z-10 group">
-//         <Image
-//           src="/images/img1.jpg"
-//           alt="Hospital Excellence"
-//           fill
-//           className="object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105"
-//         />
-//         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent" />
-//         <div className="absolute bottom-10 left-10 text-white">
-//           <div className="text-4xl font-bold mb-1">0%</div>
-//           <div className="text-xs font-bold uppercase tracking-widest text-teal-400">Wait Time Commitment</div>
-//         </div>
-//       </div>
-//       {/* Organic Background Blobs */}
-//       <div className="absolute -top-20 -right-20 w-80 h-80 bg-teal-200/30 blur-[100px] rounded-full animate-pulse" />
-//       <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-200/30 blur-[120px] rounded-full" />
-//     </motion.div>
-//   </div>
-// </section>
