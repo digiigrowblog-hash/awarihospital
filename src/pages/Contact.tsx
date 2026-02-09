@@ -100,16 +100,7 @@ const Contact: React.FC = () => {
               ))}
             </div>
             
-            <div className="p-10 rounded-[3rem] bg-slate-950 text-white relative overflow-hidden">
-               <div className="relative z-10">
-                 <h4 className="text-2xl font-bold mb-4">Direct Concierge</h4>
-                 <p className="text-slate-400 font-light mb-8">Immediate routing to medical specialists for urgent inquiries.</p>
-                 <a href="tel:+917947417062" className="flex items-center gap-3 text-teal-400 font-bold hover:gap-4 transition-all">
-                   Call Now <MoveRight className="w-5 h-5" />
-                 </a>
-               </div>
-               <div className="absolute top-0 right-0 w-32 h-32 bg-teal-500/10 blur-3xl rounded-full" />
-            </div>
+           
           </div>
 
           {/* Form Side */}
