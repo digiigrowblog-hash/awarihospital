@@ -19,7 +19,32 @@ import {
 import {  DOCTORS, REVIEWS } from "@/constants";
 import HeroCarousel from "@/components/HeroCarousel";
 
-
+  const reviews = [
+    {
+      name: "Sarah Patil",
+      role: "Patient",
+      rating: 5,
+      review:
+        "The care I received was exceptional. The staff was compassionate, and the facilities were truly world-class.",
+      img: "/images/review1.jpg",
+    },
+    {
+      name: "Rajesh kamle",
+      role: "Patient",
+      rating: 4,
+      review:
+        "From consultation to treatment, everything was seamless. Highly recommend this hospital for anyone seeking quality care.",
+      img: "/images/review2.jpg",
+    },
+    {
+      name: "priyesh shinde",
+      role: "Patient",
+      rating: 5,
+      review:
+        "Modern technology combined with a human touch made my experience incredibly comforting.",
+      img: "/images/review3.jpg",
+    },
+  ];
 
 
 const SERVICES = [
@@ -329,6 +354,61 @@ const Home: React.FC = () => {
         </div>
       </section> */}
 
+
+
+
+    {/* patient Review */}
+    <section className="relative py-24 px-6 bg-slate-50">
+      <div className="container mx-auto text-center mb-16">
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight"
+        >
+          Patient <span className="text-teal-500 italic font-light">Reviews</span>
+        </motion.h2>
+        <p className="text-slate-500 mt-4 max-w-2xl mx-auto text-lg">
+          Real stories from our patients reflect our commitment to compassionate, next-generation healthcare.
+        </p>
+      </div>
+
+      <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {reviews.map((review, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all"
+          >
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-1">
+                {Array.from({ length: review.rating || 5 }).map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-lg">★</span>
+                ))}
+              </div>
+              <div>
+                <h4 className="font-bold text-slate-900 text-lg">
+                  {review.name}
+                </h4>
+                <p className="text-sm text-teal-500 font-semibold">
+                  {review.role}
+                </p>
+              </div>
+            </div>
+
+            <p className="text-slate-600 leading-relaxed italic">
+              “{review.review}”
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+
+
       {/* Infinite Footer CTA */}
       <section className="py-24 container mx-auto px-6">
         <div className="bg-slate-950 md:rounded-[5rem] rounded-3xl md:p-24 p-12 text-center relative overflow-hidden">
@@ -343,12 +423,12 @@ const Home: React.FC = () => {
             >
               Schedule Consultation
             </Link>
-            <a
+            <Link
               href="tel:+917947417062"
               className="md:px-12 px-8 md:py-6 py-3 bg-white/5 border border-white/20 text-white rounded-full font-bold text-xl hover:bg-white hover:text-slate-950 transition-all"
             >
               Direct Hotline
-            </a>
+            </Link>
           </div>
         </div>
       </section>
